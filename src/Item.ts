@@ -7,4 +7,14 @@ export default class Item {
     this.description = description;
     this.price = price;
   }
+
+  calculateTax(): number {
+    if (this.category === "Coffee") {
+      return (this.price * this.getTax()) / 100;
+    }
+    if (this.category === "Tea") {
+      return (this.price * this.getTax()) / 100;
+    }
+    return 0;
+  }
 }

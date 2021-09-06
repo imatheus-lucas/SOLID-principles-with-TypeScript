@@ -21,12 +21,7 @@ export default class Order {
   getTaxes(): number {
     let taxes = 0;
     for (let item of this.items) {
-      if (item.category === "Coffee") {
-        taxes += (item.price * 10) / 100;
-      }
-      if (item.category === "Tea") {
-        taxes += (item.price * 20) / 100;
-      }
+      taxes += item.calculateTax();
     }
     return taxes;
   }

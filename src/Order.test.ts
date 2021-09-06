@@ -17,7 +17,7 @@ describe("Orders", function () {
 
     order.addItem(new Item("Coffee", "Cappucino", 10)); //10%
     order.addItem(new Item("Tea", "Black Tea", 10)); //20%
-
+    order.addItem(new Item("Electronics", "TV", 1000)); //10%
     const taxes = order.getTaxes();
 
     expect(taxes).toBe(3);
