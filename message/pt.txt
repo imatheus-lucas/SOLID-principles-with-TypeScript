@@ -1,0 +1,1 @@
+O total foi de R${total}, os imposots foram de R${taxes}. Obrigado pela compra!

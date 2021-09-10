@@ -1,0 +1,1 @@
+Total was R${total}, taxes were R${taxes}. Thanks for purchasing!
