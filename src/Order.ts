@@ -1,7 +1,7 @@
 import Item from "./Item";
 import TaxItem from "./TaxItem";
 import fs from "fs/promises";
-import MessageData from "./MessageData";
+import MessageData from "./IMessageData";
 export default class Order {
   items: Item[];
   messageData: MessageData;
@@ -37,11 +37,5 @@ export default class Order {
     return message
       .replace("{total}", this.getTotal().toString())
       .replace("{taxes}", this.getTaxes().toString());
-    // if (language == "en") {
-    //   return `Total was $${this.getTotal()}, taxes were $${this.getTaxes()}. Thanks for purchasing!`;
-    // }
-    // if (language == "pt") {
-    //   return `O total foi de R$${this.getTotal()}, os imposots foram de R$${this.getTaxes()}. Obrigado pela compra!`;
-    // }
   }
 }

@@ -1,4 +1,4 @@
-import MessageData from "./MessageData";
+import MessageData from "./IMessageData";
 
 import fs from "fs/promises";
 
